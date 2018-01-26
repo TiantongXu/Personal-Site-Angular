@@ -31,7 +31,8 @@ body {
     border: 2px solid black;
 }
 
-.nav-item.active, .nav-link:hover {
+.active, .nav-link:hover {
+	cursor: pointer;
     background-color: #31353a;
 }
 
@@ -51,7 +52,7 @@ body {
     border-radius: 50%;
 }
 .mainrow {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -119,10 +120,6 @@ body {
 
 .add_btn {
     background-image: url('/img/add.png');
-}
-
-.nav-item {
-    cursor: pointer;
 }
 
 .footertext {

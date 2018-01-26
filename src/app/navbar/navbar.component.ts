@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  selected = 'about';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(name: string): void {
+  	console.log(name);
+    this.selected = name;
   }
 
 }

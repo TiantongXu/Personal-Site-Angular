@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
@@ -10,6 +11,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { CreditsComponent } from './credits/credits.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { CreditsComponent } from './credits/credits.component';
   ],
   imports: [
     BrowserModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
